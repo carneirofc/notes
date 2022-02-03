@@ -17,3 +17,17 @@ sysctl -p /etc/sysctl.d/99-ping.conf
 - https://fedoraproject.org/wiki/Changes/EnableSysctlPingGroupRange
 - https://github.com/systemd/systemd/pull/13141
 - https://github.com/systemd/systemd/blob/main/sysctl.d/50-default.conf
+
+## Docker: Tini - A tiny but valid init for containers
+
+```dockerfile
+# Add Tini
+ENV TINI_VERSION v0.19.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+RUN chmod +x /tini
+ENTRYPOINT ["/tini", "--"]
+```
+
+### References
+
+- https://github.com/krallin/tini
