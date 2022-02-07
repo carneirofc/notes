@@ -1,7 +1,3 @@
-# notes
-
-Useful information on various topics
-
 ## Linux
 
 ### ping: socket: Operation not permitted
