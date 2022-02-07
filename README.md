@@ -18,6 +18,12 @@ sysctl -p /etc/sysctl.d/99-ping.conf
 - https://github.com/systemd/systemd/pull/13141
 - https://github.com/systemd/systemd/blob/main/sysctl.d/50-default.conf
 
+### Docker: documentation for docker-compose
+
+- https://github.com/compose-spec
+- https://github.com/compose-spec/compose-spec/blob/master/spec.md
+- https://github.com/compose-spec/compose-spec/blob/master/deploy.md
+
 ## Docker: Tini - A tiny but valid init for containers
 
 ```dockerfile
